@@ -1,5 +1,19 @@
 # React + TypeScript + Vite
 
+启动开发服务器：
+
+  cd /Users/ggbond/todo-app
+  /opt/homebrew/bin/npm run dev
+
+  然后浏览器打开 http://localhost:5173 即可。
+
+  重构要点：
+  - 全局变量 → useState / useLocalStorage 自定义 Hook
+  - DOM 操作 → JSX 声明式渲染
+  - escapeHtml() → 由 React 自动处理 XSS
+  - UI / 颜色 / 动画完全与原版一致
+  - localStorage 数据格式不变，原有数据可直接读取
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
